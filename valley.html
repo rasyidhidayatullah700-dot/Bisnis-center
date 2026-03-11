@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Valley Store</title>
+
+<style>
+body{
+font-family: Arial, sans-serif;
+background:#0f172a;
+color:white;
+margin:0;
+}
+
+header{
+background:#1e293b;
+padding:25px;
+text-align:center;
+}
+
+.logo{
+font-size:32px;
+font-weight:bold;
+color:#38bdf8;
+}
+
+.subtitle{
+color:#94a3b8;
+margin-top:5px;
+}
+
+.container{
+width:90%;
+max-width:900px;
+margin:auto;
+margin-top:30px;
+}
+
+.card{
+background:#1e293b;
+padding:20px;
+margin:15px 0;
+border-radius:10px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.price{
+color:#22c55e;
+font-weight:bold;
+margin-top:5px;
+}
+
+button{
+background:#22c55e;
+border:none;
+padding:10px 16px;
+border-radius:6px;
+cursor:pointer;
+color:white;
+font-weight:bold;
+}
+
+button:hover{
+background:#16a34a;
+}
+
+.section-title{
+margin-top:40px;
+font-size:22px;
+color:#38bdf8;
+}
+
+.testimoni{
+background:#1e293b;
+padding:15px;
+margin:10px 0;
+border-radius:8px;
+}
+
+footer{
+text-align:center;
+margin-top:40px;
+padding:20px;
+color:#94a3b8;
+}
+</style>
+
+<script>
+function pesan(produk){
+let nomor="6283877337584";
+let teks="Halo Valley Store, saya ingin membeli "+produk;
+let url="https://wa.me/"+nomor+"?text="+encodeURIComponent(teks);
+window.open(url,"_blank");
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+<div class="logo">Valley Store</div>
+<div class="subtitle">Digital Product & Services</div>
+</header>
+
+<div class="container">
+
+<div class="section-title">Produk</div>
+
+<div class="card">
+<div>
+<h3>Bug WhatsApp</h3>
+<p>Bug WhatsApp per nomor.</p>
+<div class="price">Rp 5.000 / nomor</div>
+</div>
+<button onclick="pesan('Bug WhatsApp 1 Nomor')">Pesan</button>
+</div>
+
+<div class="card">
+<div>
+<h3>Panel Unlimited</h3>
+<p>Panel hosting untuk menjalankan bot tanpa limit.</p>
+<div class="price">Rp 10.000</div>
+</div>
+<button onclick="pesan('Panel Unlimited')">Pesan</button>
+</div>
+
+<div class="card">
+<div>
+<h3>Bot WhatsApp</h3>
+<p>Bot WhatsApp otomatis dengan berbagai fitur.</p>
+<div class="price">Rp 20.000</div>
+</div>
+<button onclick="pesan('Bot WhatsApp')">Pesan</button>
+</div>
+
+<div class="card">
+<div>
+<h3>Sewa Bot</h3>
+<p>Sewa bot WhatsApp dengan fitur lengkap.</p>
+<div class="price">Rp 10.000 / minggu</div>
+</div>
+<button onclick="pesan('Sewa Bot 1 Minggu')">Pesan</button>
+</div>
+
+
+<div class="section-title">Testimoni</div>
+
+<div class="testimoni">
+"Panelnya lancar, langsung aktif. Recommended." – Andi
+</div>
+
+<div class="testimoni">
+"Bot WhatsApp nya work semua fitur. Mantap." – Rizky
+</div>
+
+<div class="testimoni">
+"Sewa bot murah tapi fitur lengkap." – Dimas
+</div>
+
+<div class="testimoni">
+"Bug WA nya cepat diproses." – Fajar
+</div>
+
+</div>
+
+<footer>
+© Valley Store
+</footer>
+
+</body>
+</html>
