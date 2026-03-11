@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Valley Store</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#0f172a;
+color:white;
+margin:0;
+}
+
+header{
+text-align:center;
+padding:40px;
+background:#020617;
+}
+
+.logo{
+font-size:36px;
+color:#38bdf8;
+font-weight:bold;
+}
+
+.subtitle{
+color:#94a3b8;
+margin-top:5px;
+}
+
+.container{
+width:90%;
+max-width:900px;
+margin:auto;
+margin-top:30px;
+}
+
+.card{
+background:#1e293b;
+padding:20px;
+margin:15px 0;
+border-radius:10px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.price{
+color:#22c55e;
+font-weight:bold;
+}
+
+button{
+background:#22c55e;
+border:none;
+padding:10px 15px;
+border-radius:6px;
+color:white;
+cursor:pointer;
+}
+
+button:hover{
+background:#16a34a;
+}
+
+.section{
+margin-top:40px;
+font-size:22px;
+color:#38bdf8;
+}
+
+.testi{
+background:#1e293b;
+padding:15px;
+margin:10px 0;
+border-radius:8px;
+}
+
+footer{
+text-align:center;
+padding:20px;
+margin-top:40px;
+color:#94a3b8;
+}
+
+</style>
+
+<script>
+
+function pesan(produk){
+
+let nomor="6283877337584"
+
+let teks="Halo Valley Store, saya ingin membeli "+produk
+
+let url="https://wa.me/"+nomor+"?text="+encodeURIComponent(teks)
+
+window.open(url,"_blank")
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<header>
+<div class="logo">Valley Store</div>
+<div class="subtitle">Digital Product Store</div>
+</header>
+
+<div class="container">
+
+<div class="section">Produk</div>
+
+<div class="card">
+<div>
+<h3>Bug WhatsApp</h3>
+<div class="price">Rp5.000 / nomor</div>
+</div>
+<button onclick="pesan('Bug WhatsApp')">Pesan</button>
+</div>
+
+<div class="card">
+<div>
+<h3>Panel Unlimited</h3>
+<div class="price">Rp10.000</div>
+</div>
+<button onclick="pesan('Panel Unlimited')">Pesan</button>
+</div>
+
+<div class="card">
+<div>
+<h3>Bot WhatsApp</h3>
+<div class="price">Rp20.000</div>
+</div>
+<button onclick="pesan('Bot WhatsApp')">Pesan</button>
+</div>
+
+<div class="card">
+<div>
+<h3>Sewa Bot</h3>
+<div class="price">Rp10.000 / minggu</div>
+</div>
+<button onclick="pesan('Sewa Bot')">Pesan</button>
+</div>
+
+<div class="section">Testimoni</div>
+
+<div class="testi">"Panelnya cepat aktif, recommended." – Andi</div>
+<div class="testi">"Bot WA nya work semua fitur." – Rizky</div>
+<div class="testi">"Sewa bot murah dan stabil." – Dimas</div>
+<div class="testi">"Bug WA diproses cepat." – Fajar</div>
+
+</div>
+
+<footer>
+© Valley Store
+</footer>
+
+</body>
+</html>
