@@ -5,7 +5,6 @@
 <title>Pesanan Valley Store</title>
 
 <style>
-
 body{
 font-family:Arial;
 background:#0f172a;
@@ -35,6 +34,59 @@ background:#22c55e;
 border:none;
 padding:10px 15px;
 border-radius:6px;
+color:white;
+cursor:pointer;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h2>Form Pesanan</h2>
+
+<input id="nama" placeholder="Nama">
+
+<select id="produk">
+<option value="Bug WhatsApp">Bug WhatsApp</option>
+<option value="Panel Unlimited">Panel Unlimited</option>
+<option value="Bot WhatsApp">Bot WhatsApp</option>
+<option value="Sewa Bot">Sewa Bot</option>
+</select>
+
+<input id="jumlah" type="number" placeholder="Jumlah">
+
+<button onclick="kirim()">Pesan</button>
+
+</div>
+
+<script>
+
+function kirim(){
+
+let nama=document.getElementById("nama").value
+let produk=document.getElementById("produk").value
+let jumlah=document.getElementById("jumlah").value
+
+let pesan=
+"Halo Valley Store\n"+
+"Saya ingin memesan\n\n"+
+"Produk: "+produk+"\n"+
+"Jumlah: "+jumlah+"\n"+
+"Nama: "+nama
+
+let url="https://wa.me/6283877337584?text="+encodeURIComponent(pesan)
+
+window.open(url)
+
+}
+
+</script>
+
+</body>
+</html>border-radius:6px;
 color:white;
 cursor:pointer;
 }
