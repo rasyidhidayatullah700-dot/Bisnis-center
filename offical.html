@@ -5,25 +5,27 @@
 <title>Pesanan Valley Store</title>
 
 <style>
+
 body{
 font-family:Arial;
 background:#0f172a;
 color:white;
 text-align:center;
-padding:30px;
+padding:40px;
 }
 
-.card{
+.box{
 background:#1e293b;
-padding:20px;
-margin:10px auto;
-width:260px;
+padding:25px;
+width:280px;
+margin:auto;
 border-radius:10px;
 }
 
-input{
+input,select{
+width:90%;
 padding:8px;
-margin:5px;
+margin:8px;
 border-radius:5px;
 border:none;
 }
@@ -31,10 +33,64 @@ border:none;
 button{
 background:#22c55e;
 border:none;
-padding:10px;
+padding:10px 15px;
 border-radius:6px;
 color:white;
+cursor:pointer;
 }
+
+</style>
+
+<script>
+
+function pesan(){
+
+let nama=document.getElementById("nama").value
+let produk=document.getElementById("produk").value
+let jumlah=document.getElementById("jumlah").value
+
+let teks =
+"Halo Valley Store%0A"+
+"Saya ingin memesan:%0A%0A"+
+"Produk: "+produk+"%0A"+
+"Jumlah: "+jumlah+"%0A"+
+"Nama: "+nama
+
+let url="https://wa.me/6283877337584?text="+teks
+
+window.location=url
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h2>Form Pesanan</h2>
+
+<input id="nama" placeholder="Nama">
+
+<select id="produk">
+<option>Bug WhatsApp</option>
+<option>Panel Unlimited</option>
+<option>Bot WhatsApp</option>
+<option>Sewa Bot</option>
+</select>
+
+<input id="jumlah" type="number" placeholder="Jumlah">
+
+<br>
+
+<button onclick="pesan()">Pesan</button>
+
+</div>
+
+</body>
+</html>}
 </style>
 
 <script>
